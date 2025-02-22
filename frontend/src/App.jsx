@@ -32,7 +32,7 @@ if(isCheckingAuth && !authUser) return(
         <Route path="/signup" element={!authUser ? <SignUpPage/> : <Navigate to="/login/"/>}/>
         <Route path="/login" element={!authUser ? <LoginPage/> : <Navigate to="/login/"/>}/>
         <Route path="/settings" element={<SettingsPage/>}/>
-        <Route path="/profile" element={authUser ? <ProfilePage/> : <Navigate to="/login/"/> }/>
+        <Route path="/profile" element={authUser ?  <ProfilePage/> : <Navigate to="/login/"/>}/>
       </Routes>
       <Toaster/> 
     </div>
